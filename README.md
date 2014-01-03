@@ -3,9 +3,9 @@ raspberry_pi
 
 Sample code and apps for the Raspberry Pi
 
-+---------------------------------------------------------+
-| Demonstration of AT&T's Speech APIs on the Raspberry Pi |
-+---------------------------------------------------------+
+
+Demonstration of AT&T's Speech APIs on the Raspberry Pi
+
 
 API Platform
     You can access AT&T APIs by navigating to http://developer.att.com. Use a trial account or
