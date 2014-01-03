@@ -8,11 +8,13 @@ Demonstration of AT&T's Speech APIs on the Raspberry Pi
 
 
 API Platform
+
     You can access AT&T APIs by navigating to http://developer.att.com. Use a trial account or
     full membership to create an 'app' and get the app details you will need to use the APIs. You
      need app key and app secret (config.py). <!--
 
 Demo Design:
+
     This code is offered without warranty and is provided for educational purposes. The Raspberry
     Pi is and interesting target that has garnered considerable interest and the goal that
     The Linux ALSA audio system (alsaaudio) captures data in chunks. The size of the chunks is
@@ -27,6 +29,7 @@ Demo Design:
         speechapp.py provides the demo app
 
 Files Provided:
+
     config.py: default configuration of APIs and a few demo app constants.
     speech.py: python methods to call oauth and speech APIs
     speechapp.py: demo app that captures audio and uses oauth, speechToText, and textToSpeech
@@ -34,6 +37,7 @@ Files Provided:
     media files: several sample wav files are provided.
 
 How To Use The Demo Code:
+
     speech.py contains five classes and one method:
         AccessToken: Gets a new access token or restore a saved one.
         SpeechToText: Convert speech into text.
@@ -84,6 +88,7 @@ How To Use The Demo Code:
         static/capture_debug.wav
 
 The PI:
+
     This demo code has been tested on a Raspberry Pi Model B Board w/NOOBS on a 8GB SD.
     Wi-Fi: WI-PI Setup:
         vi /etc/network/interfaces
@@ -102,6 +107,7 @@ The PI:
          on most linux systems.
 
 Packages you might need:
+
     Use apt-get or pip to install any needed packages.
     You may need to install:
         alsaaudio: a Python package for working with Linux ALSA audio subsystem.
@@ -113,6 +119,7 @@ Packages you might need:
             apt-get python-pycurl
 
 Useful Debugging Tools/Commands:
+
     Audio commands:
         interactive set up of audio subsystem: alsamixer
         store alsamixer with: alsactl store 1
@@ -141,6 +148,7 @@ Useful Debugging Tools/Commands:
         python -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())"
 
     Running Your App at Startup:
+    
         Add a command line to /etc/rc.local for example 'python speechapp.py'
 
 
