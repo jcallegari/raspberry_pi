@@ -16,14 +16,14 @@ API Platform
 Demo Design:
 
     This code is offered without warranty and is provided for educational purposes. The Raspberry
-    Pi is and interesting target that has garnered considerable interest and the goal that
-    The Linux ALSA audio system (alsaaudio) captures data in chunks. The size of the chunks is
-    determined by ALSA. AT&T's speech to text API in streaming mode expects chunks of data
-    no greater than 512 bytes. An alsaaudio input is configured. A queue is configured. An audio
-    capture thread is started which puts that data into the queue. A speechToText API thread is
-    started that pulls data from the queue and streams to the API.
+    Pi is an interesting target that has garnered considerable interest. This demo code provides
+    a working model for using audio on the Pi and a Pythonic abstraction for the AT&T Speech APIs.
+    The Linux ALSA audio system (alsaaudio) captures data in chunks. An alsaaudio input is configured. 
+    A queue is configured. An audio capture thread is started which puts that data into the queue. 
+    A speechToText API thread is started that pulls data from the queue and streams to the API.
     The transcription is processed, action is taken, and text is converted to synthesized speech
-    with the textToSpeech API and then played.
+    with the textToSpeech API and then played. In this demo one of the Pi's onboard LEDs (OK) is
+    used for visual feedback controlled by voice command.
     Audio files (as opposed to microphone) may also be converted.
         speech.py provides API methods
         speechapp.py provides the demo app
