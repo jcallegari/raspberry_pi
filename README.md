@@ -11,7 +11,7 @@ API Platform
 
     You can access AT&T APIs by navigating to http://developer.att.com. Use a trial account or
     full membership to create an 'app' and get the app details you will need to use the APIs. You
-     need app key and app secret (config.py). <!--
+     need app key and app secret (config.py).
 
 Demo Design:
 
