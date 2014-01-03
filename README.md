@@ -105,6 +105,11 @@ The PI:
         Hardware Specific:  Controlling the LEDs
         Removing the above and modifying audio system configuration should enable the code to run
          on most linux systems.
+    ISSUE: Audio Quality with USB Audio Devices
+        This is an issue that results in less than stellar recognition. You can find additional
+        information on this firmware issue at:
+        http://www.raspyfi.com/anatomy-of-a-pi-usb-audio-quality-and-related-issues-on-pi/
+        This is a big opportunity for improvement.
 
 Packages you might need:
 
